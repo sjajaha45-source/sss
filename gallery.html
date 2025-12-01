@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Фотогалерея</h1>
+</header>
+
+<nav>
+    <a href="index.html">Головна</a>
+    <a href="about.html">Про ліцей</a>
+    <a href="news.html">Оголошення</a>
+    <a href="memory.html">І біль не стихне у віках...</a>
+    <a href="gallery.html">Галерея</a>
+    <a href="contacts.html">Контакти</a>
+</nav>
+<style>
+    .modern-announcement {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 30px 35px;
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+        font-family: "Inter", Arial, sans-serif;
+        color: #1f2937;
+        line-height: 1.6;
+        animation: fadeIn 0.6s ease;
+    }
+
+    .modern-announcement h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 18px;
+        letter-spacing: -0.5px;
+        background: linear-gradient(90deg, #3b82f6, #06b6d4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    .modern-announcement p {
+        font-size: 18px;
+        margin-bottom: 18px;
+        color: #4b5563;
+    }
+
+    .modern-announcement strong {
+        color: #1d4ed8;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(10px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+</style>
+
+<div class="modern-announcement">
+    <h2>Яскраві моменти нашого ліцею</h2>
+
+    <p>
+        <strong>Ми віримо, що найкращі моменти варто зберігати</strong> —переглядайте, надихайтесь та розділяйте ці спогади разом із нами!
+        
+    </p>
+</div>
+
+<div class="container">
+    <div class="gallery">
+        <img src="586.jpg" onclick="openPhoto('586.jpg')">
+        <img src="58633.jpg" onclick="openPhoto('58633.jpg')">
+        <img src="585054827_42.jpg" onclick="openPhoto('585054827_42.jpg')">
+        
+    </div>
+</div>
+
+<footer>© 2025 Ліцей №3</footer>
+
+</body>
+</html>

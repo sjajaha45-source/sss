@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(180deg, #dfe9ff, #fafaff);
+}
+
+header {
+    background: linear-gradient(135deg, #5b6eff, #9f44ff);
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    animation: fadeDown 1s ease;
+}
+
+nav {
+    background: #2b2b2b;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #7b9aff;
+    transform: scale(1.1);
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    animation: fadeIn 1.2s ease;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    animation: grow 0.7s ease;
+}
+
+.btn {
+    background: #5b6eff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #3847e0;
+    transform: scale(1.05);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.07);
+}
+
+/* --- Анімації --- */
+
+@keyframes fadeIn {
+    from { opacity:0; transform: translateY(20px); }
+    to { opacity:1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+    from { opacity:0; transform: translateY(-20px); }
+    to { opacity:1; transform: translateY(0); }
+}
+
+@keyframes grow {
+    from { opacity:0; transform: scale(0.9); }
+    to { opacity:1; transform: scale(1); }
+}
+
+footer {
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
